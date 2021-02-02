@@ -1,0 +1,21 @@
+---
+label: Article
+hide_body: false
+display_field: title
+fields:
+  - name: title
+    type: text
+    label: Title
+  - name: description
+    type: text
+    label: Description
+  - name: author
+    label: Author
+    type: select
+    config:
+      source:
+        type: pages
+        section: authors
+
+pages:
+  - content/posts/hello-world.md
